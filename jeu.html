@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jeu.css">
+    <script src="jeu.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+           <img src="images/user.png" alt="">
+           <p>Score : <span id="score"></span><img id="bouee" src="images/bouee.png" alt=""></p>
+           <p id="id"></p>
+           <p id="id2"></p>
+    </header>
+
+
+
+    <!--Middle-->
+    <center><input id="btn" type="button" value="Start" onclick="movedown()"></center>
+    <div class="h1" id="h1">
+        <img src="images/heart.png" alt="" >
+    </div>
+    <p id="un">+1</p>
+    <div class="b1" id="b1">
+        <img id="b1" src="images/feu.png" alt="" >
+    </div>
+    <div class="b2" id="b2">
+        <img id="b2" src="images/feu.png" alt="" >
+    </div>
+    <div class="h2" id="h2">
+        <img src="images/heart.png" alt="" >
+    </div>
+    <!--bateau-->
+    <img src="images/b1.png" alt="" id="image">
+
+
+
+
+    <!--Footer-->
+    <footer>
+        <div class="sea" id="sea">
+            <img id="img" src="images/manette.png" alt="">
+            <p id="eony">SONY</p>
+            <div id="L">
+                <input type="button" value="°" onclick="moveleft()" >
+            </div>
+            <div id="R">
+                <input type="button" value="X" onclick="moveright()">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
